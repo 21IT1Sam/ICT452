@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+.header h1 {
+  font-size: 50px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.leftcolumn {   
+  float: middle;
+  width: 100%;
+}
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+.screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+.screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Introduce Myself</h1>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+    <h2>Profile Picture</h2>
+    <div class="fakeimg" style="height:200px">
+    <img src="https://i.postimg.cc/dVpHTyxj/Sam.jpg" alt="Sam" class="center">
+    </div>
+</div>
+
+<div class="card">
+  <div class="row">
+    <div class="column">
+      <h3>Introduction Myself</h3>
+      <p>Hello! My name is Sam. I am 20 years old.I am living in Ningbo, Zhejiang now. I like black and blue. I like eating noodles and fast food. I am interested in this course and hope it can provide me with more new knowledge.</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="topnav">
+    <a href="#">Sample Websites</a>
+    <a href="#">Storyboard</a>
+  </div>
+</div>
+
+<div class="card">
+  <div class="footer">
+    <p>Author:21IT1 Sam<br>
+    <a href="mailto:481600983@qq.com">481600983@qq.com</ a></p>
+  </div>
+</div>
+</body>
+</html>
